@@ -1,0 +1,50 @@
+{
+  "app": {
+    "category": "video",
+    "domains": [
+      "biliapi.com",
+      "biliapi.net",
+      "bilibili.com",
+      "bilivideo.cn",
+      "hdslb.com"
+    ],
+    "icon": "",
+    "id": "bilibili",
+    "name": "哔哩哔哩",
+    "names": {
+      "en": "Bilibili",
+      "zh-CN": "哔哩哔哩"
+    },
+    "vendor": "哔哩哔哩"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "video",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Bilibili.",
+    "zh-CN": "哔哩哔哩的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "50c5e2597bfc3d7656efd573590cd0d250cd2dcee18e8d4cec4de09196bb7a84",
+      "size": 834
+    }
+  ],
+  "id": "app_template/bilibili",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Bilibili",
+    "zh-CN": "哔哩哔哩"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

@@ -1,0 +1,46 @@
+{
+  "app": {
+    "category": "travel",
+    "domains": [
+      "12306.cn"
+    ],
+    "icon": "",
+    "id": "railway12306",
+    "name": "12306 铁路",
+    "names": {
+      "en": "China Railway 12306",
+      "zh-CN": "12306 铁路"
+    },
+    "vendor": "中国铁路"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "travel",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for China Railway 12306.",
+    "zh-CN": "12306 铁路的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "af6e2049536418fd3e60ed7a71fa74d09a8d666a2df7c0c748969e6a310a6868",
+      "size": 802
+    }
+  ],
+  "id": "app_template/railway12306",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "China Railway 12306",
+    "zh-CN": "12306 铁路"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

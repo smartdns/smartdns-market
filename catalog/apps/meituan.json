@@ -1,0 +1,47 @@
+{
+  "app": {
+    "category": "lifestyle",
+    "domains": [
+      "meituan.com",
+      "meituan.net"
+    ],
+    "icon": "",
+    "id": "meituan",
+    "name": "美团",
+    "names": {
+      "en": "Meituan",
+      "zh-CN": "美团"
+    },
+    "vendor": "美团"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "lifestyle",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Meituan.",
+    "zh-CN": "美团的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "3ab7cbd17fe6af2247fcd34c20e476dd9de168ca153222f17e8c2c40650b3389",
+      "size": 781
+    }
+  ],
+  "id": "app_template/meituan",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Meituan",
+    "zh-CN": "美团"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

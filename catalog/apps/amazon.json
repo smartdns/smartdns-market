@@ -1,0 +1,46 @@
+{
+  "app": {
+    "category": "shopping",
+    "domains": [
+      "amazon.com"
+    ],
+    "icon": "",
+    "id": "amazon",
+    "name": "Amazon",
+    "names": {
+      "en": "Amazon",
+      "zh-CN": "Amazon"
+    },
+    "vendor": "Amazon"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "shopping",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Amazon.",
+    "zh-CN": "Amazon的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "dadbf7bf752e7402247b4f857c70c3faa0934dd85ed9b566aa5759c5dd8b8726",
+      "size": 762
+    }
+  ],
+  "id": "app_template/amazon",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Amazon",
+    "zh-CN": "Amazon"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

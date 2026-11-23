@@ -1,0 +1,47 @@
+{
+  "app": {
+    "category": "ai",
+    "domains": [
+      "chatgpt.com",
+      "openai.com"
+    ],
+    "icon": "",
+    "id": "openai",
+    "name": "ChatGPT/OpenAI",
+    "names": {
+      "en": "ChatGPT / OpenAI",
+      "zh-CN": "ChatGPT/OpenAI"
+    },
+    "vendor": "OpenAI"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "ai",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for ChatGPT / OpenAI.",
+    "zh-CN": "ChatGPT/OpenAI的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "c720a6696c42540bbcece46a28c68b8a5ff1e271c508c2e54a473bef4c74aa3d",
+      "size": 798
+    }
+  ],
+  "id": "app_template/openai",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "ChatGPT / OpenAI",
+    "zh-CN": "ChatGPT/OpenAI"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

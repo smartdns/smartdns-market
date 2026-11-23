@@ -1,0 +1,49 @@
+{
+  "app": {
+    "category": "shopping",
+    "domains": [
+      "360buyimg.com",
+      "jd.com",
+      "jd.hk",
+      "jddebug.com"
+    ],
+    "icon": "",
+    "id": "jd",
+    "name": "京东",
+    "names": {
+      "en": "JD.com",
+      "zh-CN": "京东"
+    },
+    "vendor": "京东"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "shopping",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for JD.com.",
+    "zh-CN": "京东的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "cedf9edb1800f5d987aaf220b1491bb885e3991498f496f62a4e5782abc33885",
+      "size": 792
+    }
+  ],
+  "id": "app_template/jd",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "JD.com",
+    "zh-CN": "京东"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

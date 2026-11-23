@@ -1,0 +1,46 @@
+{
+  "app": {
+    "category": "social",
+    "domains": [
+      "zhihu.com"
+    ],
+    "icon": "",
+    "id": "zhihu",
+    "name": "知乎",
+    "names": {
+      "en": "Zhihu",
+      "zh-CN": "知乎"
+    },
+    "vendor": "知乎"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "social",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Zhihu.",
+    "zh-CN": "知乎的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "9637e97a83b997e3760b80613c5b2171a50b190a06ff5d608220bbef698e0d28",
+      "size": 756
+    }
+  ],
+  "id": "app_template/zhihu",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Zhihu",
+    "zh-CN": "知乎"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

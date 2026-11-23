@@ -1,0 +1,46 @@
+{
+  "app": {
+    "category": "gaming",
+    "domains": [
+      "epicgames.com"
+    ],
+    "icon": "",
+    "id": "epicgames",
+    "name": "Epic Games",
+    "names": {
+      "en": "Epic Games",
+      "zh-CN": "Epic Games"
+    },
+    "vendor": "Epic Games"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "gaming",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Epic Games.",
+    "zh-CN": "Epic Games的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "0757e544e4ea20548d3eb232627a156c21647c097fc9ddc3db7d628f25161aa6",
+      "size": 782
+    }
+  ],
+  "id": "app_template/epicgames",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Epic Games",
+    "zh-CN": "Epic Games"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

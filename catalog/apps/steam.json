@@ -1,0 +1,47 @@
+{
+  "app": {
+    "category": "gaming",
+    "domains": [
+      "steamcontent.com",
+      "steampowered.com"
+    ],
+    "icon": "",
+    "id": "steam",
+    "name": "Steam",
+    "names": {
+      "en": "Steam",
+      "zh-CN": "Steam"
+    },
+    "vendor": "Valve"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "gaming",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Steam.",
+    "zh-CN": "Steam的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "ee5e3bea6aa3848881dbb8e510f2ba8f80c069bb82c90f4cb61d98c3bce9e690",
+      "size": 780
+    }
+  ],
+  "id": "app_template/steam",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Steam",
+    "zh-CN": "Steam"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

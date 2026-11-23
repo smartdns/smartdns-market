@@ -1,0 +1,46 @@
+{
+  "app": {
+    "category": "vendor",
+    "domains": [
+      "vivo.com.cn"
+    ],
+    "icon": "",
+    "id": "vivo",
+    "name": "vivo",
+    "names": {
+      "en": "vivo",
+      "zh-CN": "vivo"
+    },
+    "vendor": "vivo"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "vendor",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for vivo.",
+    "zh-CN": "vivo的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "cd7d53dd41fb9a58d35295df03a81b31c2c975af60703035e818418d7059748c",
+      "size": 751
+    }
+  ],
+  "id": "app_template/vivo",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "vivo",
+    "zh-CN": "vivo"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

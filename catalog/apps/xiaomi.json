@@ -1,0 +1,49 @@
+{
+  "app": {
+    "category": "vendor",
+    "domains": [
+      "mi.com",
+      "miui.com",
+      "miwifi.com",
+      "xiaomi.com"
+    ],
+    "icon": "",
+    "id": "xiaomi",
+    "name": "小米/MIUI",
+    "names": {
+      "en": "Xiaomi / MIUI",
+      "zh-CN": "小米/MIUI"
+    },
+    "vendor": "小米"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "vendor",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Xiaomi / MIUI.",
+    "zh-CN": "小米/MIUI的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "cff89ff6a4fa5f835bb5e499252cc3eae110e4176f966a3b4ab1f46f6cf8cbc2",
+      "size": 812
+    }
+  ],
+  "id": "app_template/xiaomi",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Xiaomi / MIUI",
+    "zh-CN": "小米/MIUI"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

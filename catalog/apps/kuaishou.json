@@ -1,0 +1,47 @@
+{
+  "app": {
+    "category": "video",
+    "domains": [
+      "gifshow.com",
+      "kuaishou.com"
+    ],
+    "icon": "",
+    "id": "kuaishou",
+    "name": "快手",
+    "names": {
+      "en": "Kuaishou",
+      "zh-CN": "快手"
+    },
+    "vendor": "快手"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "video",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Kuaishou.",
+    "zh-CN": "快手的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "9c84049ff48d9e677f183a48741541a5df00f2aa4b5c9aa8804e3cc02b842732",
+      "size": 781
+    }
+  ],
+  "id": "app_template/kuaishou",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Kuaishou",
+    "zh-CN": "快手"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

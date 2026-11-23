@@ -1,0 +1,50 @@
+{
+  "app": {
+    "category": "shopping",
+    "domains": [
+      "alibabadns.com",
+      "alicdn.com",
+      "alikunlun.com",
+      "taobao.com",
+      "tmall.com"
+    ],
+    "icon": "",
+    "id": "taobao",
+    "name": "淘宝",
+    "names": {
+      "en": "Taobao",
+      "zh-CN": "淘宝"
+    },
+    "vendor": "阿里巴巴"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "shopping",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Taobao.",
+    "zh-CN": "淘宝的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "cca455e4fa7c1c95d6afb53d8e7377d78a77d35a4bfc8d19beeba3c8e44a393c",
+      "size": 826
+    }
+  ],
+  "id": "app_template/taobao",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Taobao",
+    "zh-CN": "淘宝"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

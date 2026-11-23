@@ -1,0 +1,57 @@
+name: market-ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  market-validate:
+    name: market-validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.x'
+      - name: Validate market data
+        run: python3 tools/check.py validate --base origin/main
+
+  dco:
+    name: dco
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+      - name: Check commit sign-offs
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
+            base="$GITHUB_BASE_REF"
+            git fetch origin "+refs/heads/$base:refs/remotes/origin/$base" --depth=1
+            commits=$(git rev-list "origin/$base..HEAD")
+          else
+            before='${{ github.event.before }}'
+            if [[ "$before" =~ ^0+$ ]]; then
+              commits=$(git rev-list -n 1 HEAD)
+            else
+              commits=$(git rev-list "$before..HEAD")
+            fi
+          fi
+          test -n "$commits"
+          while IFS= read -r commit; do
+            if ! git show -s --format=%B "$commit" | grep -Eq '^Signed-off-by: .+ <[^<>[:space:]]+@[^<>[:space:]]+>$'; then
+              echo "Missing DCO Signed-off-by trailer: $commit" >&2
+              exit 1
+            fi
+          done <<< "$commits"

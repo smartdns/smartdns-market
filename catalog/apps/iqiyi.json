@@ -1,0 +1,47 @@
+{
+  "app": {
+    "category": "video",
+    "domains": [
+      "iqiyi.com",
+      "qiyi.com"
+    ],
+    "icon": "",
+    "id": "iqiyi",
+    "name": "爱奇艺",
+    "names": {
+      "en": "iQIYI",
+      "zh-CN": "爱奇艺"
+    },
+    "vendor": "爱奇艺"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "video",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for iQIYI.",
+    "zh-CN": "爱奇艺的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "508adc4721f035f2b57505043a1cd4f1eb275f517b5b787b11834058aca4d703",
+      "size": 772
+    }
+  ],
+  "id": "app_template/iqiyi",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "iQIYI",
+    "zh-CN": "爱奇艺"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

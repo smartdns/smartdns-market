@@ -1,0 +1,47 @@
+{
+  "app": {
+    "category": "social",
+    "domains": [
+      "weibo.cn",
+      "weibo.com"
+    ],
+    "icon": "",
+    "id": "weibo",
+    "name": "微博",
+    "names": {
+      "en": "Weibo",
+      "zh-CN": "微博"
+    },
+    "vendor": "微博"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "social",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Weibo.",
+    "zh-CN": "微博的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "01c75c33753377c470a99e1c996672e5d7f565d537ce65e2bc1f7c280be14488",
+      "size": 767
+    }
+  ],
+  "id": "app_template/weibo",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Weibo",
+    "zh-CN": "微博"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

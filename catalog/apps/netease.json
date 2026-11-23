@@ -1,0 +1,48 @@
+{
+  "app": {
+    "category": "misc",
+    "domains": [
+      "126.com",
+      "163.com",
+      "netease.com"
+    ],
+    "icon": "",
+    "id": "netease",
+    "name": "网易",
+    "names": {
+      "en": "NetEase",
+      "zh-CN": "网易"
+    },
+    "vendor": "网易"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "misc",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for NetEase.",
+    "zh-CN": "网易的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "2412c83723d734b1a223b5626b5131ecc4fc00708151a58e481abf9a0ce5631c",
+      "size": 782
+    }
+  ],
+  "id": "app_template/netease",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "NetEase",
+    "zh-CN": "网易"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

@@ -1,0 +1,49 @@
+{
+  "authors": [
+    "SmartDNS"
+  ],
+  "capabilities": [],
+  "category": "examples",
+  "changelog": "1.1.0: fixes @match for URL matching and adds banner text, colour, and enable settings.",
+  "description": {
+    "en": "A worked example that injects one configurable banner on the reserved example.com domain.",
+    "zh-CN": "一个示例脚本，可在保留域名 example.com 上插入可配置横幅。"
+  },
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "c44ad9839f56b91c5dcb8f7c6ec441857c6c6c2e957504bf7d8c67831e31574e",
+      "size": 140
+    },
+    {
+      "path": "README.md",
+      "sha256": "5152971592f3eed41255880fea7122589cf65ed9ed22465781ab125e639fed1c",
+      "size": 187
+    },
+    {
+      "path": "src/script.js",
+      "sha256": "a9ce0e7054c867498346fd455e7d36ef2b7d57c31c5ee62c05cceef83543089d",
+      "size": 2282
+    }
+  ],
+  "id": "traffic_script/example-css",
+  "install": {
+    "args": {
+      "banner_text": "Injected by SmartDNS"
+    },
+    "format": "javascript",
+    "matches": [
+      "*://example.com/*",
+      "*://www.example.com/*"
+    ]
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Market validation script",
+    "zh-CN": "市场验证脚本"
+  },
+  "schema_version": 1,
+  "type": "traffic_script",
+  "version": "1.1.0"
+}

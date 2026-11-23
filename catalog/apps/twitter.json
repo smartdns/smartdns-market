@@ -1,0 +1,47 @@
+{
+  "app": {
+    "category": "social",
+    "domains": [
+      "twitter.com",
+      "x.com"
+    ],
+    "icon": "",
+    "id": "twitter",
+    "name": "Twitter/X",
+    "names": {
+      "en": "Twitter / X",
+      "zh-CN": "Twitter/X"
+    },
+    "vendor": "X Corp"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "social",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Twitter / X.",
+    "zh-CN": "Twitter/X的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "a8598a766b8bc4aceba4d0f1e9ae0c0f7b197dc6a794ceab6d409b47e8ed2a23",
+      "size": 783
+    }
+  ],
+  "id": "app_template/twitter",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Twitter / X",
+    "zh-CN": "Twitter/X"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

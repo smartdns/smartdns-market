@@ -1,0 +1,46 @@
+{
+  "app": {
+    "category": "video",
+    "domains": [
+      "youku.com"
+    ],
+    "icon": "",
+    "id": "youku",
+    "name": "优酷",
+    "names": {
+      "en": "Youku",
+      "zh-CN": "优酷"
+    },
+    "vendor": "阿里巴巴"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "video",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Youku.",
+    "zh-CN": "优酷的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "01b87c89713b222f44010423ae788eb1538310ad7915bd671ac826abff2378e1",
+      "size": 761
+    }
+  ],
+  "id": "app_template/youku",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Youku",
+    "zh-CN": "优酷"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

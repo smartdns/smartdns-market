@@ -1,0 +1,48 @@
+{
+  "app": {
+    "category": "vendor",
+    "domains": [
+      "hicloud.com",
+      "hihonorcloud.com",
+      "huawei.com"
+    ],
+    "icon": "",
+    "id": "huawei",
+    "name": "华为/HiCloud",
+    "names": {
+      "en": "Huawei / HiCloud",
+      "zh-CN": "华为/HiCloud"
+    },
+    "vendor": "华为"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "vendor",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Huawei / HiCloud.",
+    "zh-CN": "华为/HiCloud的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "3b74fca8e272d5f62395f73219bc110f3faed8879d6257ac9ea189517da9a9da",
+      "size": 821
+    }
+  ],
+  "id": "app_template/huawei",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Huawei / HiCloud",
+    "zh-CN": "华为/HiCloud"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

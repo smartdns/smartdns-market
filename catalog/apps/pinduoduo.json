@@ -1,0 +1,48 @@
+{
+  "app": {
+    "category": "shopping",
+    "domains": [
+      "pddpic.com",
+      "pinduoduo.com",
+      "yangkeduo.com"
+    ],
+    "icon": "",
+    "id": "pinduoduo",
+    "name": "拼多多",
+    "names": {
+      "en": "Pinduoduo",
+      "zh-CN": "拼多多"
+    },
+    "vendor": "拼多多"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "shopping",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Pinduoduo.",
+    "zh-CN": "拼多多的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "42b3834c92bb512a6550b4d1f22faf132e578564d2eae3203548d8d526ceb100",
+      "size": 809
+    }
+  ],
+  "id": "app_template/pinduoduo",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Pinduoduo",
+    "zh-CN": "拼多多"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

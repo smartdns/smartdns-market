@@ -1,0 +1,46 @@
+{
+  "app": {
+    "category": "finance",
+    "domains": [
+      "alipay.com"
+    ],
+    "icon": "",
+    "id": "alipay",
+    "name": "支付宝",
+    "names": {
+      "en": "Alipay",
+      "zh-CN": "支付宝"
+    },
+    "vendor": "蚂蚁集团"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "finance",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Alipay.",
+    "zh-CN": "支付宝的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "f1b363f8544e42d062ef899e20577a36f289563d98ecf62acd1f44480696c0de",
+      "size": 770
+    }
+  ],
+  "id": "app_template/alipay",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Alipay",
+    "zh-CN": "支付宝"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

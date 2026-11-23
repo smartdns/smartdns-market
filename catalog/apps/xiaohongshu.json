@@ -1,0 +1,47 @@
+{
+  "app": {
+    "category": "social",
+    "domains": [
+      "xhscdn.com",
+      "xiaohongshu.com"
+    ],
+    "icon": "",
+    "id": "xiaohongshu",
+    "name": "小红书",
+    "names": {
+      "en": "Xiaohongshu",
+      "zh-CN": "小红书"
+    },
+    "vendor": "小红书"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "social",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Xiaohongshu.",
+    "zh-CN": "小红书的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "394c74e58de61d7bad766be9a23272b0fcb5139884820ac217116de258903c6c",
+      "size": 799
+    }
+  ],
+  "id": "app_template/xiaohongshu",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Xiaohongshu",
+    "zh-CN": "小红书"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

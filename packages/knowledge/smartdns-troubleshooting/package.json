@@ -1,0 +1,43 @@
+{
+  "authors": [
+    "SmartDNS"
+  ],
+  "capabilities": [],
+  "category": "examples",
+  "changelog": "Initial migration from the official Cloud package.",
+  "description": {
+    "en": "A sequence for diagnosing DNS failures and slow responses.",
+    "zh-CN": "用于排查 DNS 解析失败或变慢的步骤。"
+  },
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "10807fd2e6b330f7a2d10368b2e71089598c28b15edfd54a75fafb1838a47f51",
+      "size": 99
+    },
+    {
+      "path": "README.md",
+      "sha256": "d40be41ea510b04d506b308b9bd22568f9b3a5205662a87ff011d4bcbc8b6b65",
+      "size": 120
+    },
+    {
+      "path": "src/knowledge.md",
+      "sha256": "fe213e73607b51ab1724428183bfcd5b0bb67ac24a09042038442dd0149ce94a",
+      "size": 1171
+    }
+  ],
+  "id": "knowledge/smartdns-troubleshooting",
+  "install": {
+    "format": "markdown",
+    "mode": "knowledge"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "SmartDNS troubleshooting",
+    "zh-CN": "SmartDNS 故障自查顺序"
+  },
+  "schema_version": 1,
+  "type": "knowledge",
+  "version": "1.0.0"
+}

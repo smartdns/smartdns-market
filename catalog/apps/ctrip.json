@@ -1,0 +1,47 @@
+{
+  "app": {
+    "category": "travel",
+    "domains": [
+      "ctrip.com",
+      "trip.com"
+    ],
+    "icon": "",
+    "id": "ctrip",
+    "name": "携程",
+    "names": {
+      "en": "Trip.com",
+      "zh-CN": "携程"
+    },
+    "vendor": "携程"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "travel",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Trip.com.",
+    "zh-CN": "携程的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "331d0250585c99c6753d178b0a63febf194f18210616c2ee923731e74beaa8a4",
+      "size": 773
+    }
+  ],
+  "id": "app_template/ctrip",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Trip.com",
+    "zh-CN": "携程"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}

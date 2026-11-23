@@ -1,0 +1,25 @@
+{
+  "exceptions": [],
+  "too_broad_domains": [
+    {
+      "domain": "apple.com",
+      "reason": "Broad root shared across multiple Apple services; requires narrower app scope."
+    },
+    {
+      "domain": "facebook.com",
+      "reason": "Broad root shared across multiple Meta services; requires narrower app scope."
+    },
+    {
+      "domain": "google.com",
+      "reason": "Broad root shared across multiple Google services; requires narrower app scope."
+    },
+    {
+      "domain": "microsoft.com",
+      "reason": "Broad root shared across multiple Microsoft products; requires narrower app scope."
+    },
+    {
+      "domain": "qq.com",
+      "reason": "Broad root covering multiple Tencent products; requires narrower app scope."
+    }
+  ]
+}

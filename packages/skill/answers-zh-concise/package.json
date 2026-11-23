@@ -1,0 +1,43 @@
+{
+  "authors": [
+    "SmartDNS"
+  ],
+  "capabilities": [],
+  "category": "examples",
+  "changelog": "Initial migration from the official Cloud package.",
+  "description": {
+    "en": "A concise Chinese response style for the SmartDNS assistant.",
+    "zh-CN": "SmartDNS 助手的简洁中文回答风格。"
+  },
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "a57b993a21cc76834a18c75b975133cdded00f41d8337f0875d985aef66bd521",
+      "size": 98
+    },
+    {
+      "path": "README.md",
+      "sha256": "96da91d7e2e9d8b0e25f3f2b31113287f1c77bc5b9322b9fb2ebfd8b717d0d30",
+      "size": 115
+    },
+    {
+      "path": "src/skill.md",
+      "sha256": "b059c0cec900bfcd9b6f96ecefe19cea543a9b82ae2c3f7c448a8d49be414d4d",
+      "size": 577
+    }
+  ],
+  "id": "skill/answers-zh-concise",
+  "install": {
+    "format": "markdown",
+    "mode": "prompt"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Concise Chinese answers",
+    "zh-CN": "中文回答风格"
+  },
+  "schema_version": 1,
+  "type": "skill",
+  "version": "1.0.0"
+}

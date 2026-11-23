@@ -1,0 +1,48 @@
+{
+  "app": {
+    "category": "search",
+    "domains": [
+      "baidu.com",
+      "bdcgslb.com",
+      "shifen.com"
+    ],
+    "icon": "",
+    "id": "baidu",
+    "name": "百度",
+    "names": {
+      "en": "Baidu",
+      "zh-CN": "百度"
+    },
+    "vendor": "百度"
+  },
+  "authors": [
+    "SmartDNS contributors"
+  ],
+  "capabilities": [],
+  "category": "search",
+  "changelog": "Initial catalog entry.",
+  "description": {
+    "en": "Domain catalog entry for Baidu.",
+    "zh-CN": "百度的域名目录条目。"
+  },
+  "files": [
+    {
+      "path": "generated/catalog.json",
+      "sha256": "0626cad83d2cbcb2f4bf1cecf0c1c2c8100c0be73707a2be41cb7ff658c81530",
+      "size": 783
+    }
+  ],
+  "id": "app_template/baidu",
+  "install": {
+    "format": "app_catalog"
+  },
+  "license": "Apache-2.0",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "Baidu",
+    "zh-CN": "百度"
+  },
+  "schema_version": 1,
+  "type": "app_template",
+  "version": "1.0.0"
+}
