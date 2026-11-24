@@ -23,13 +23,7 @@
     "en": "Domain catalog entry for Epic Games.",
     "zh-CN": "Epic Games的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "0757e544e4ea20548d3eb232627a156c21647c097fc9ddc3db7d628f25161aa6",
-      "size": 782
-    }
-  ],
+  "files": [],
   "id": "app_template/epicgames",
   "install": {
     "format": "app_catalog"

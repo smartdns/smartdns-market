@@ -24,13 +24,7 @@
     "en": "Domain catalog entry for Meituan.",
     "zh-CN": "美团的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "3ab7cbd17fe6af2247fcd34c20e476dd9de168ca153222f17e8c2c40650b3389",
-      "size": 781
-    }
-  ],
+  "files": [],
   "id": "app_template/meituan",
   "install": {
     "format": "app_catalog"

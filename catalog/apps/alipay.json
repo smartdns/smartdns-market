@@ -23,13 +23,7 @@
     "en": "Domain catalog entry for Alipay.",
     "zh-CN": "支付宝的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "f1b363f8544e42d062ef899e20577a36f289563d98ecf62acd1f44480696c0de",
-      "size": 770
-    }
-  ],
+  "files": [],
   "id": "app_template/alipay",
   "install": {
     "format": "app_catalog"

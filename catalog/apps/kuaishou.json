@@ -24,13 +24,7 @@
     "en": "Domain catalog entry for Kuaishou.",
     "zh-CN": "快手的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "9c84049ff48d9e677f183a48741541a5df00f2aa4b5c9aa8804e3cc02b842732",
-      "size": 781
-    }
-  ],
+  "files": [],
   "id": "app_template/kuaishou",
   "install": {
     "format": "app_catalog"

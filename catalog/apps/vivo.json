@@ -23,13 +23,7 @@
     "en": "Domain catalog entry for vivo.",
     "zh-CN": "vivo的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "cd7d53dd41fb9a58d35295df03a81b31c2c975af60703035e818418d7059748c",
-      "size": 751
-    }
-  ],
+  "files": [],
   "id": "app_template/vivo",
   "install": {
     "format": "app_catalog"

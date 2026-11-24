@@ -23,13 +23,7 @@
     "en": "Domain catalog entry for Anthropic / Claude.",
     "zh-CN": "Anthropic/Claude的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "f0740c4245d1308bbf9ba369b3911ba23b321d60b6fcee44f6773bafa2589dd7",
-      "size": 799
-    }
-  ],
+  "files": [],
   "id": "app_template/anthropic",
   "install": {
     "format": "app_catalog"

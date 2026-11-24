@@ -24,13 +24,7 @@
     "en": "Domain catalog entry for ChatGPT / OpenAI.",
     "zh-CN": "ChatGPT/OpenAI的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "c720a6696c42540bbcece46a28c68b8a5ff1e271c508c2e54a473bef4c74aa3d",
-      "size": 798
-    }
-  ],
+  "files": [],
   "id": "app_template/openai",
   "install": {
     "format": "app_catalog"

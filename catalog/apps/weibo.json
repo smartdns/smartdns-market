@@ -24,13 +24,7 @@
     "en": "Domain catalog entry for Weibo.",
     "zh-CN": "微博的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "01c75c33753377c470a99e1c996672e5d7f565d537ce65e2bc1f7c280be14488",
-      "size": 767
-    }
-  ],
+  "files": [],
   "id": "app_template/weibo",
   "install": {
     "format": "app_catalog"

@@ -23,13 +23,7 @@
     "en": "Domain catalog entry for Youku.",
     "zh-CN": "优酷的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "01b87c89713b222f44010423ae788eb1538310ad7915bd671ac826abff2378e1",
-      "size": 761
-    }
-  ],
+  "files": [],
   "id": "app_template/youku",
   "install": {
     "format": "app_catalog"

@@ -27,13 +27,7 @@
     "en": "Domain catalog entry for Bilibili.",
     "zh-CN": "哔哩哔哩的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "50c5e2597bfc3d7656efd573590cd0d250cd2dcee18e8d4cec4de09196bb7a84",
-      "size": 834
-    }
-  ],
+  "files": [],
   "id": "app_template/bilibili",
   "install": {
     "format": "app_catalog"

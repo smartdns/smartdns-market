@@ -23,13 +23,7 @@
     "en": "Domain catalog entry for Ele.me.",
     "zh-CN": "饿了么的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "c8b5b2ea1ef06a481f0a3a2226e29cc616a48580cd7f2ef737879e4646519dd6",
-      "size": 767
-    }
-  ],
+  "files": [],
   "id": "app_template/eleme",
   "install": {
     "format": "app_catalog"

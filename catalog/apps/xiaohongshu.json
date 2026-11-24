@@ -24,13 +24,7 @@
     "en": "Domain catalog entry for Xiaohongshu.",
     "zh-CN": "小红书的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "394c74e58de61d7bad766be9a23272b0fcb5139884820ac217116de258903c6c",
-      "size": 799
-    }
-  ],
+  "files": [],
   "id": "app_template/xiaohongshu",
   "install": {
     "format": "app_catalog"

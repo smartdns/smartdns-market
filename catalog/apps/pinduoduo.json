@@ -25,13 +25,7 @@
     "en": "Domain catalog entry for Pinduoduo.",
     "zh-CN": "拼多多的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "42b3834c92bb512a6550b4d1f22faf132e578564d2eae3203548d8d526ceb100",
-      "size": 809
-    }
-  ],
+  "files": [],
   "id": "app_template/pinduoduo",
   "install": {
     "format": "app_catalog"

@@ -25,13 +25,7 @@
     "en": "Domain catalog entry for Baidu.",
     "zh-CN": "百度的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "0626cad83d2cbcb2f4bf1cecf0c1c2c8100c0be73707a2be41cb7ff658c81530",
-      "size": 783
-    }
-  ],
+  "files": [],
   "id": "app_template/baidu",
   "install": {
     "format": "app_catalog"

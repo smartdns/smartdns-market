@@ -24,13 +24,7 @@
     "en": "Domain catalog entry for Steam.",
     "zh-CN": "Steam的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "ee5e3bea6aa3848881dbb8e510f2ba8f80c069bb82c90f4cb61d98c3bce9e690",
-      "size": 780
-    }
-  ],
+  "files": [],
   "id": "app_template/steam",
   "install": {
     "format": "app_catalog"

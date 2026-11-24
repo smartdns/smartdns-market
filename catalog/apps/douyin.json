@@ -28,13 +28,7 @@
     "en": "Domain catalog entry for Douyin.",
     "zh-CN": "抖音的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "3bd1a2f49836ef8a0f490b8ba69b6b01e75013db111ffc2baf2d1c1ba0126bed",
-      "size": 845
-    }
-  ],
+  "files": [],
   "id": "app_template/douyin",
   "install": {
     "format": "app_catalog"

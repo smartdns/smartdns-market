@@ -3,7 +3,6 @@
 import argparse
 import hashlib
 import json
-import os
 import re
 import subprocess
 import sys
@@ -29,7 +28,7 @@ def read_json(path):
 
 
 def dump_bytes(value):
-    return (json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n").encode("utf-8")
+    return (json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2) + "\n").encode("utf-8")
 
 
 def manifest_paths():
@@ -53,17 +52,6 @@ def safe_file(base, rel):
     return target
 
 
-def generated_catalog(appdoc):
-    app = appdoc["app"]
-    categories = read_json(ROOT / "catalog/categories.json")
-    payload = {"categories": categories, "apps": [{
-        "id": app["id"], "name": app["names"]["en"], "names": app["names"],
-        "vendor": app["vendor"], "category": app["category"], "icon": app["icon"],
-        "domains": app["domains"],
-    }]}
-    return dump_bytes(payload)
-
-
 def prepare():
     errors = []
     for mp in manifest_paths():
@@ -72,11 +60,7 @@ def prepare():
             is_app = mp.parent == ROOT / "catalog/apps"
             base = ROOT / "catalog/apps" / mp.stem if is_app else mp.parent
             if is_app:
-                generated = generated_catalog(data)
-                out = base / "generated/catalog.json"
-                out.parent.mkdir(parents=True, exist_ok=True)
-                out.write_bytes(generated)
-                items = [{"path": "generated/catalog.json", "size": len(generated), "sha256": hashlib.sha256(generated).hexdigest()}]
+                items = []
             else:
                 items = []
                 for file in sorted(base.rglob("*")):
@@ -185,8 +169,8 @@ def validate(base_ref=None):
             errors.append(f"{rel}: license must be a non-empty SPDX identifier")
         if not isinstance(doc.get("changelog"), str) or not doc["changelog"].strip():
             errors.append(f"{rel}: changelog must be non-empty")
-        if not isinstance(doc["files"], list) or not doc["files"]:
-            errors.append(f"{rel}: files must be a non-empty array")
+        if not isinstance(doc["files"], list):
+            errors.append(f"{rel}: files must be an array")
         seen_paths = set()
         package_base = (ROOT / "catalog/apps" / mp.stem) if mp.parent == ROOT / "catalog/apps" else mp.parent
         for item in doc.get("files", []):
@@ -211,6 +195,15 @@ def validate(base_ref=None):
             if not isinstance(app, dict):
                 errors.append(f"{rel}: app_template requires app object")
                 continue
+            if doc["files"]:
+                errors.append(f"{rel}: app manifests must have an empty files[]; Cloud builds the device payload")
+            app_required = ("id", "name", "names", "vendor", "category", "icon", "domains")
+            absent = [key for key in app_required if key not in app]
+            if absent:
+                errors.append(f"{rel}: app is missing fields {', '.join(absent)}")
+            for field in ("name", "vendor", "category", "icon"):
+                if not isinstance(app.get(field), str):
+                    errors.append(f"{rel}: app.{field} must be a string")
             appid = app.get("id")
             if appid != mp.stem or doc["id"] != f"app_template/{appid}":
                 errors.append(f"{rel}: app.id, manifest id, and filename must match")
@@ -239,10 +232,6 @@ def validate(base_ref=None):
                 normed.append(norm)
             if len(set(normed)) != len(normed):
                 errors.append(f"{rel}: duplicate domains")
-            expected = generated_catalog(doc)
-            genpath = package_base / "generated/catalog.json"
-            if not genpath.is_file() or genpath.read_bytes() != expected:
-                errors.append(f"{rel}: generated/catalog.json missing or not deterministic")
     # App domain overlap: any shared domain or parent/child coverage is held for review.
     appids = sorted(apps)
     for i, left_id in enumerate(appids):

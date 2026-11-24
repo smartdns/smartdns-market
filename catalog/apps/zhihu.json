@@ -23,13 +23,7 @@
     "en": "Domain catalog entry for Zhihu.",
     "zh-CN": "知乎的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "9637e97a83b997e3760b80613c5b2171a50b190a06ff5d608220bbef698e0d28",
-      "size": 756
-    }
-  ],
+  "files": [],
   "id": "app_template/zhihu",
   "install": {
     "format": "app_catalog"

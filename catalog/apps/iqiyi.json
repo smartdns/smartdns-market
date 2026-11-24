@@ -24,13 +24,7 @@
     "en": "Domain catalog entry for iQIYI.",
     "zh-CN": "爱奇艺的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "508adc4721f035f2b57505043a1cd4f1eb275f517b5b787b11834058aca4d703",
-      "size": 772
-    }
-  ],
+  "files": [],
   "id": "app_template/iqiyi",
   "install": {
     "format": "app_catalog"

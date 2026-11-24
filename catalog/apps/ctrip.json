@@ -24,13 +24,7 @@
     "en": "Domain catalog entry for Trip.com.",
     "zh-CN": "携程的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "331d0250585c99c6753d178b0a63febf194f18210616c2ee923731e74beaa8a4",
-      "size": 773
-    }
-  ],
+  "files": [],
   "id": "app_template/ctrip",
   "install": {
     "format": "app_catalog"

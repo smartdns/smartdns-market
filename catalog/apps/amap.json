@@ -24,13 +24,7 @@
     "en": "Domain catalog entry for Amap.",
     "zh-CN": "高德地图的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "7325abb4c80692395c9321e13cd82896cd2d603947a90b4773eb597b71cbb6b5",
-      "size": 777
-    }
-  ],
+  "files": [],
   "id": "app_template/amap",
   "install": {
     "format": "app_catalog"

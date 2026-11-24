@@ -26,13 +26,7 @@
     "en": "Domain catalog entry for JD.com.",
     "zh-CN": "京东的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "cedf9edb1800f5d987aaf220b1491bb885e3991498f496f62a4e5782abc33885",
-      "size": 792
-    }
-  ],
+  "files": [],
   "id": "app_template/jd",
   "install": {
     "format": "app_catalog"

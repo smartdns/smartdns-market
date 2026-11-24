@@ -25,13 +25,7 @@
     "en": "Domain catalog entry for NetEase.",
     "zh-CN": "网易的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "2412c83723d734b1a223b5626b5131ecc4fc00708151a58e481abf9a0ce5631c",
-      "size": 782
-    }
-  ],
+  "files": [],
   "id": "app_template/netease",
   "install": {
     "format": "app_catalog"

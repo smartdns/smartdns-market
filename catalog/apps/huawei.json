@@ -25,13 +25,7 @@
     "en": "Domain catalog entry for Huawei / HiCloud.",
     "zh-CN": "华为/HiCloud的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "3b74fca8e272d5f62395f73219bc110f3faed8879d6257ac9ea189517da9a9da",
-      "size": 821
-    }
-  ],
+  "files": [],
   "id": "app_template/huawei",
   "install": {
     "format": "app_catalog"

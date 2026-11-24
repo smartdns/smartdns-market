@@ -1,16 +1,16 @@
 # Contributing
 
-Contributions are reviewed through pull requests. Public market content is free. SmartDNS Cloud is the only supported installation and update channel.
+Contributions are reviewed through pull requests. Merging to `main` does not publish content. A maintainer publishes a GitHub Release tagged `vX.Y.Z` using three-part SemVer; SmartDNS Cloud syncs published Releases only. Public market content is free, and SmartDNS Cloud is the only supported installation and update channel.
 
 ## Packages and apps
 
 Packages live at `packages/<type>/<slug>/` and have a `package.json`, a README, and all fixed source bytes under the package directory. The manifest uses schema version 1, an existing SmartDNS package type, localized `name` and `description` values for `en` and `zh-CN`, a minimum SmartDNS version, install data, capabilities, license, authors, category, changelog, and `files[]` entries with path, byte size, and SHA-256. Keep files relative to the package directory. Do not include build hooks, generated binaries, secrets, or remote file URLs.
 
-Apps live one per file at `catalog/apps/<id>.json`. The app ID, manifest slug, and filename must match. App names and categories require `en` and `zh-CN`; domains must be normalized, specific, evidenced, and non-overlapping with other apps. Cite authoritative product documentation or vendor-owned hostnames in the pull request description. Public suffixes, broad shared roots, unexplained overlap, and domain count changes above 50% require resolution before merge.
+Apps live one per file at `catalog/apps/<id>.json`. The app object itself is the source data; app manifests have an empty `files[]` array because Cloud creates the device payload. The app ID, manifest slug, and filename must match. App names and categories require `en` and `zh-CN`; domains must be normalized, specific, evidenced, and non-overlapping with other apps. Cite authoritative product documentation or vendor-owned hostnames in the pull request description. Public suffixes, broad shared roots, unexplained overlap, and domain count changes above 50% require resolution before merge.
 
 ## Versions and capabilities
 
-Use three-part SemVer. Published versions are immutable: any source, install, capability, category-dependent output, or generated catalog change requires a higher version. Keep changelogs concise and explain capability changes. Declare only capabilities required by the package; pure data uses an empty capability list. Cloud performs the full product validator and runtime-specific review.
+Use three-part SemVer. Published versions are immutable: any source, install, capability, or app data change requires a higher version. Keep changelogs concise and explain capability changes. Declare only capabilities required by the package; pure data uses an empty capability list. Cloud performs the full product validator and runtime-specific review.
 
 ## Licensing and attribution
 
@@ -29,3 +29,7 @@ Signed-off-by: Your Name <you@example.com>
 ```
 
 Use `git commit -s`. A sign-off certifies the Developer Certificate of Origin terms. No CLA is required.
+
+## Release publishing
+
+Only maintainers publish GitHub Releases. Use a release tag matching `vX.Y.Z` and the release snapshot that Cloud will sync. Pull requests and merges to `main` are not publication events.

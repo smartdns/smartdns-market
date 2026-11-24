@@ -23,13 +23,7 @@
     "en": "Domain catalog entry for Amazon.",
     "zh-CN": "Amazon的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "dadbf7bf752e7402247b4f857c70c3faa0934dd85ed9b566aa5759c5dd8b8726",
-      "size": 762
-    }
-  ],
+  "files": [],
   "id": "app_template/amazon",
   "install": {
     "format": "app_catalog"

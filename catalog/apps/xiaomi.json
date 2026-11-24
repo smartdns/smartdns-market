@@ -26,13 +26,7 @@
     "en": "Domain catalog entry for Xiaomi / MIUI.",
     "zh-CN": "小米/MIUI的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "cff89ff6a4fa5f835bb5e499252cc3eae110e4176f966a3b4ab1f46f6cf8cbc2",
-      "size": 812
-    }
-  ],
+  "files": [],
   "id": "app_template/xiaomi",
   "install": {
     "format": "app_catalog"

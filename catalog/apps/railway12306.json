@@ -23,13 +23,7 @@
     "en": "Domain catalog entry for China Railway 12306.",
     "zh-CN": "12306 铁路的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "af6e2049536418fd3e60ed7a71fa74d09a8d666a2df7c0c748969e6a310a6868",
-      "size": 802
-    }
-  ],
+  "files": [],
   "id": "app_template/railway12306",
   "install": {
     "format": "app_catalog"

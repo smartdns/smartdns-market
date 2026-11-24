@@ -27,13 +27,7 @@
     "en": "Domain catalog entry for Taobao.",
     "zh-CN": "淘宝的域名目录条目。"
   },
-  "files": [
-    {
-      "path": "generated/catalog.json",
-      "sha256": "cca455e4fa7c1c95d6afb53d8e7377d78a77d35a4bfc8d19beeba3c8e44a393c",
-      "size": 826
-    }
-  ],
+  "files": [],
   "id": "app_template/taobao",
   "install": {
     "format": "app_catalog"
