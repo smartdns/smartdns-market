@@ -1,0 +1,35 @@
+{
+  "authors": [
+    "SmartDNS"
+  ],
+  "capabilities": [],
+  "category": "misc",
+  "changelog": "1.0.0: add upstream URL subscription descriptor.",
+  "description": {
+    "en": "AdGuard's filter list built for DNS-level blocking.",
+    "zh-CN": "AdGuard 为 DNS 层过滤设计的列表。"
+  },
+  "files": [
+    {
+      "type": "url",
+      "path": "list.txt",
+      "url": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
+    }
+  ],
+  "id": "adblock_list/adguard-dns",
+  "install": {
+    "format": "adblock",
+    "category": "ad",
+    "name": "AdGuard-DNS",
+    "refresh_interval": 86400
+  },
+  "license": "Unknown",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "AdGuard DNS filter",
+    "zh-CN": "AdGuard DNS 过滤列表"
+  },
+  "schema_version": 1,
+  "type": "adblock_list",
+  "version": "1.0.0"
+}

@@ -12,7 +12,22 @@ Migrated the three latest non-advertising packages from the read-only export dat
 | `knowledge/smartdns-troubleshooting` | `1.0.0` | `packages/knowledge/smartdns-troubleshooting` | `1.0.0` |
 | `traffic_script/example-css` | `1.1.0` | `packages/traffic_script/example-css` | `1.1.0` |
 
-Source bytes were copied from the dated export. `tools/check.py prepare` records the copied package bytes in each package manifest's `files[]` digest and size. App manifests contain the app data directly and have empty `files[]` arrays. The six official `adblock_list` packages were not migrated, per decision 7.
+Source bytes were copied from the dated export. `tools/check.py prepare` records the copied package bytes in each package manifest's `files[]` digest and size. App manifests contain the app data directly and have empty `files[]` arrays.
+
+## Adblock list migration (phase 1)
+
+On 2026-11-27 the owner decided to migrate the six existing official adblock list IDs into this repository. The repo keeps the existing IDs, version, and install semantics. Each package has one URL descriptor at `list.txt`; upstream bytes remain dynamic and are not copied into the repository. The Cloud inventory reports version `1.0.0` for all six packages. Upstream licences are not established by that inventory and are marked unknown rather than inferred.
+
+| Existing package ID | Cloud version | Repository path | Upstream URL | Upstream licence |
+|---|---|---|---|---|
+| `adblock_list/anti-ad` | `1.0.0` | `packages/adblock_list/anti-ad` | `https://anti-ad.net/easylist.txt` | Unknown |
+| `adblock_list/easylist-china` | `1.0.0` | `packages/adblock_list/easylist-china` | `https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt` | Unknown |
+| `adblock_list/easylist` | `1.0.0` | `packages/adblock_list/easylist` | `https://easylist.to/easylist/easylist.txt` | Unknown |
+| `adblock_list/adguard-tracking` | `1.0.0` | `packages/adblock_list/adguard-tracking` | `https://filters.adtidy.org/extension/ublock/filters/3.txt` | Unknown |
+| `adblock_list/easyprivacy` | `1.0.0` | `packages/adblock_list/easyprivacy` | `https://easylist.to/easylist/easyprivacy.txt` | Unknown |
+| `adblock_list/adguard-dns` | `1.0.0` | `packages/adblock_list/adguard-dns` | `https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt` | Unknown |
+
+The Cloud contract accepts one URL-backed file for `adblock_list`, redirects file requests to its URL, and uses `install.format: adblock` with category `ad`. Existing install names and `refresh_interval: 86400` are preserved. Repo validation checks the descriptor shape and HTTPS URL without fetching the subscription. The exact URL-to-URL ownership comparison and broader takeover behavior remain Cloud migration work; this repo change does not perform a live Cloud takeover.
 
 ## App catalog candidates
 

@@ -4,7 +4,7 @@ Contributions are reviewed through pull requests. Merging to `main` does not pub
 
 ## Packages and apps
 
-Packages live at `packages/<type>/<slug>/` and have a `package.json`, a README, and all fixed source bytes under the package directory. The manifest uses schema version 1, an existing SmartDNS package type, localized `name` and `description` values for `en` and `zh-CN`, a minimum SmartDNS version, install data, capabilities, license, authors, category, changelog, and `files[]` entries with path, byte size, and SHA-256. Keep files relative to the package directory. Do not include build hooks, generated binaries, secrets, or remote file URLs.
+Packages live at `packages/<type>/<slug>/` and have a `package.json` and package documentation where appropriate. The manifest uses schema version 1, an existing SmartDNS package type, localized `name` and `description` values for `en` and `zh-CN`, a minimum SmartDNS version, install data, capabilities, license, authors, category, changelog, and `files[]` entries. Fixed hosted files use path, byte size, and SHA-256; supported live data subscriptions use a URL descriptor with `type: "url"`, a logical path, and an HTTPS URL. Keep paths relative to the package directory. Do not include build hooks, generated binaries, or secrets. URL descriptors are for data subscriptions only; script source must remain fixed, reviewable hosted bytes.
 
 Apps live one per file at `catalog/apps/<id>.json`. The app object itself is the source data; app manifests have an empty `files[]` array because Cloud creates the device payload. The app ID, manifest slug, and filename must match. App names and categories require `en` and `zh-CN`; domains must be normalized, specific, evidenced, and non-overlapping with other apps. Cite authoritative product documentation or vendor-owned hostnames in the pull request description. Public suffixes, broad shared roots, unexplained overlap, and domain count changes above 50% require resolution before merge.
 
@@ -18,7 +18,7 @@ Use an SPDX license identifier and include or preserve all required upstream cop
 
 ## Content policy
 
-Do not submit advertising blocking lists, ad-blocking scripts, or other ad-blocking content to the official repository. Security blocking lists remain out of scope until legal review is complete. Do not include credentials, personal data, or user exports.
+Official repository content must not include circumvention content. This includes GFWList, proxy-node subscriptions, and presets intended to bypass network restrictions. Keep submissions within the package type's documented purpose. Do not include credentials, personal data, or user exports. State upstream licensing accurately; if it cannot be established, say it is unknown rather than assigning a presumed licence.
 
 ## Sign-off
 

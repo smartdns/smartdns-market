@@ -1,0 +1,35 @@
+{
+  "authors": [
+    "SmartDNS"
+  ],
+  "capabilities": [],
+  "category": "misc",
+  "changelog": "1.0.0: add upstream URL subscription descriptor.",
+  "description": {
+    "en": "A filter list for analytics and tracking domains.",
+    "zh-CN": "用于过滤分析与跟踪域名的列表。"
+  },
+  "files": [
+    {
+      "type": "url",
+      "path": "list.txt",
+      "url": "https://filters.adtidy.org/extension/ublock/filters/3.txt"
+    }
+  ],
+  "id": "adblock_list/adguard-tracking",
+  "install": {
+    "format": "adblock",
+    "category": "ad",
+    "name": "AdGuard-Tracking",
+    "refresh_interval": 86400
+  },
+  "license": "Unknown",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "AdGuard Tracking Protection",
+    "zh-CN": "AdGuard 跟踪保护过滤列表"
+  },
+  "schema_version": 1,
+  "type": "adblock_list",
+  "version": "1.0.0"
+}

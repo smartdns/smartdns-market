@@ -6,6 +6,7 @@ import json
 import re
 import subprocess
 import sys
+from urllib.parse import urlsplit
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -174,8 +175,33 @@ def validate(base_ref=None):
         seen_paths = set()
         package_base = (ROOT / "catalog/apps" / mp.stem) if mp.parent == ROOT / "catalog/apps" else mp.parent
         for item in doc.get("files", []):
-            if not isinstance(item, dict) or not all(k in item for k in ("path", "size", "sha256")):
-                errors.append(f"{rel}: each files[] entry needs path, size, sha256")
+            if not isinstance(item, dict):
+                errors.append(f"{rel}: each files[] entry must be an object")
+                continue
+            if item.get("type") == "url":
+                if set(item) != {"type", "path", "url"}:
+                    errors.append(f"{rel}: URL files[] entries need only type, path, url")
+                    continue
+                path = item["path"]
+                url = item["url"]
+                try:
+                    if not isinstance(path, str) or not path or "\\" in path:
+                        raise ValueError("path must be a non-empty POSIX relative path")
+                    logical = PurePosixPath(path)
+                    if logical.is_absolute() or any(part in ("", ".", "..") for part in logical.parts):
+                        raise ValueError("absolute, empty, dot, or parent path component")
+                    parsed = urlsplit(url) if isinstance(url, str) else None
+                    if parsed is None or parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password:
+                        raise ValueError("url must be an HTTPS URL without credentials")
+                except Exception as exc:
+                    errors.append(f"{rel}: invalid URL file descriptor ({exc})")
+                    continue
+                if path in seen_paths:
+                    errors.append(f"{rel}: duplicate file path {path}")
+                seen_paths.add(path)
+                continue
+            if "type" in item or not all(k in item for k in ("path", "size", "sha256")) or set(item) != {"path", "size", "sha256"}:
+                errors.append(f"{rel}: hosted files[] entries need path, size, sha256 and no type")
                 continue
             path = item["path"]
             if path in seen_paths:

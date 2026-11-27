@@ -1,0 +1,35 @@
+{
+  "authors": [
+    "SmartDNS"
+  ],
+  "capabilities": [],
+  "category": "misc",
+  "changelog": "1.0.0: add upstream URL subscription descriptor.",
+  "description": {
+    "en": "EasyList's Chinese supplement for ad servers used by Chinese websites. Pair it with EasyList.",
+    "zh-CN": "EasyList 的中文补充列表，收录中国网站使用的广告服务器。可与 EasyList 配合使用。"
+  },
+  "files": [
+    {
+      "type": "url",
+      "path": "list.txt",
+      "url": "https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt"
+    }
+  ],
+  "id": "adblock_list/easylist-china",
+  "install": {
+    "format": "adblock",
+    "category": "ad",
+    "name": "EasyList-China",
+    "refresh_interval": 86400
+  },
+  "license": "Unknown",
+  "min_smartdns_version": "1.0.0",
+  "name": {
+    "en": "EasyList China",
+    "zh-CN": "EasyList China 中国过滤列表"
+  },
+  "schema_version": 1,
+  "type": "adblock_list",
+  "version": "1.0.0"
+}
